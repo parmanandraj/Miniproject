@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <form>
+            <fieldset style="width: 30%;">
+                <label>Enter your friend name</label><input type="text" id="t1"> <br><br>
+                <input type="button" value="Send Sms" onclick="check()"><br>
+                <h1 id="res" style="color: blue;"></h1>
+            </fieldset>
+        </form>
+        <script>
+            function check()
+            {
+              v=document.getElementById('t1').value;
+              alert(v)
+              document.getElementById('res').innerHTML=v+",I hope you are doing well!"
+            }
+        </script>
+    </body>
+</html>
