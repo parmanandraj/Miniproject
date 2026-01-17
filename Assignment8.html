@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <style>
+            table,tr,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+                margin: 3px 10px;
+                /* box-sizing: border-box; */
+            }
+            button, input[type="submit"]{
+                background-color: rgb(9, 213, 249);
+                color: red;
+                /* border: none; */
+                /* padding: 10px 20px; */
+                /* cursor: pointer; */
+                border-radius: 5px;
+                margin-left: 130px;
+                width: 80px;
+            }
+            button,input[type="reset"] {
+                background-color: rgb(18, 14, 240);
+                color: white;
+                margin-right: 10px;
+                border-radius: 5px;
+                width: 80px;
+            }
+            input{
+                width: 210px;
+                /* padding: 10px; */
+                /* margin: 5px 0; */
+                /* box-sizing: border-box; */
+            }
+            select {
+                width: 220px;
+                padding: 4px;
+                margin: 3px 0px;
+                /* box-sizing: border-box; */
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <h2 style="background-color:rgb(9, 213, 249);width: 600px;height: 40px; text-align: center;margin-left: 40px;">Registration Entry</h2>
+            <!-- <h2>Registration Entry</h2> -->
+            <!-- <tr>
+                <td style="align-items: center;"><h2 style="background-color:rgb(9, 213, 249);width: 300px;height: 30px;">Registration Entry</h2></td>
+            </tr> -->
+            <tr>
+                <!-- <td>Reg Form No.</td> -->
+                <td><input type="name" placeholder="Reg Form No."></td>
+                <td><input type="date" placeholder="Reg Reg"></td>
+            </tr>
+            <tr>
+                <td><input type="name" placeholder="Student name"></td>
+                <td><input type="name" placeholder="Father name"></td>
+            </tr>
+            <tr>
+                <td><input type="name" placeholder="Mother name"></td>
+                <td><input type="date" placeholder="Date of Birth"></td>
+            </tr>
+            <tr>
+                <td><input type="email" placeholder="EMAIL ID (OPTIONAL)"></td>
+                <td><input type="name" placeholder="Contact No."></td>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <option value="Select">----Select any blood group---</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>D</option>
+                        <option>B+</option>
+                        <option>A-</option>
+                        <option>B-</option>
+                    </select>
+                </td>
+                 <td>
+                         <label>Gender</label><br>
+                        <input type="radio" name="gender" value="male"></input>Male
+                        <input type="radio" name="female" value="female"></input>Female
+                        <input type="radio" name="Other" value="other"></input>Other
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="name" placeholder="College Name">
+                    <!-- <label>Course</label>
+                    <input type="checkbox" name="course" value="C">C 
+                    <input type="checkbox" name="course" value="C">C++
+                    <input type="checkbox" name="course" value="C">Java -->
+                </td>
+                <td>
+                    <label>Course</label><br>
+                    <input type="checkbox" name="course" value="C">C 
+                    <input type="checkbox" name="course" value="C">C++
+                    <input type="checkbox" name="course" value="C">Java
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <option value="Select">---Select Any State---</option>
+                        <option>Bihar</option>
+                        <option>UP</option>
+                        <option>Delhi</option>
+                        <option>Punjab</option>
+                        <option>Haryana</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option value="Select">---Select Any Distric</option>
+                        <option>Buxar</option>
+                        <option>Gopalganj</option>
+                        <option>Motiahri</option>
+                        <option>Kishanganj</option>
+                        <option>Siwan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Permanent Address">
+                </td>
+                <td>
+                    <input type="text" placeholder="Corresponding Address">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="file" placeholder="choose file">
+                </td>
+                <td>
+                    <input type="file" placeholder="choose file">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="Submit" value="Submit" style="background-color: red; color:white; border: none; padding: 10px 20px;">
+                </td>
+                <td>
+                    <input type="Reset" value="Reset" style="background-color: rgb(18, 14, 240); color:white; border: none; padding: 10px 20px; margin-left: 10px;">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
