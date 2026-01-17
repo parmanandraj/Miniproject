@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <style>
+            .outer{
+                width: 70%;
+                height: 80%;
+                background-color: purple;
+                margin-left: 100px;
+            }
+            .inner{
+                width: 75%;
+                height: 70%;
+                background-color: white;
+                position: relative;
+                left: 50px;
+                top: 90px;
+                border-radius:10%;
+                box-shadow: 0px 0px 50px black;
+            }
+            input{
+                width: 90%;
+                height: 50%;
+            }
+            input[type="text"]{
+                width: 90%;
+                height: 50px;
+                margin-left: 6px;
+                margin-bottom: 25px;
+                margin-top: 10px;
+                border-radius: 50px;
+                border-style: none;
+                box-shadow: 0px 0px 10px blue;
+            }
+            input[type="Password"]{
+                width: 90%;
+                height: 50px;
+                margin-left: 6px;
+                margin-bottom: 25px;
+                margin-top: 10px;
+                border-radius: 50px;
+                border-style: none;
+                box-shadow: 0px 0px 10px blue;
+            }
+            input[type="button"]{
+                border-radius: 50px;
+                width: 50%;
+                height: 35px;
+                margin-left: 50px;
+                background-color: rgb(204, 121, 242);
+                color: white;
+                box-shadow: 0px 0px 10px blue;
+                padding: 10px;
+                padding-right: 50px;
+                padding-left: 10px;
+                border-radius: 20px;
+                font-weight: bold;
+                border-style: none;
+                box-shadow: 0px 10px 50px purple;
+            
+            }
+            i{
+                position: relative;
+                left:60px;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner">
+            <table>
+                <tr>
+                    <td><h2 style="padding-left: 180px;padding-top:30px;">Sign up</h2></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-user fa-bounce"></i><input type="text" placeholder="Name"></td>
+                </tr>
+                 <tr>
+                    <td><i class="fa-solid fa-envelope-open fa-bounce"></i><input type="text" placeholder="Email"></td>
+                </tr>
+                 <tr>
+                    <td><i class="fa-solid fa-lock fa-beat"></i><input type="password" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td><input type="cheakbox"><label for="t"><br>I read and agree to </label><span style="color: purple;">Term and condition</span></td>
+                </tr>
+                  <tr>
+                    <td><input type="button" value="CREATE ACCOUNT"></td>
+                </tr>
+                 <tr>
+                    <td><input type="cheakbox"><label for="t">Already login ?</label><span style="color: purple;">Sign up</span></td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </body>
+</html>
