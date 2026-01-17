@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <style>
+            .board{
+                margin: 10px auto;
+                border: 2px solid black;
+                width: fit-content;
+            }
+            .row{
+                display: flex;
+            }
+            .red{
+                background-color: red;
+            }
+            .green{
+                background-color: green;
+            }
+            .yellow{
+                background-color: yellow;
+            }
+            .blue{
+                background-color: blue;
+            }
+            .red-box{
+                background-color: red;
+                width: 250px;
+                height: 250px;
+                border: 1px solid #000;
+            }
+            .green-box{
+                background-color: green;
+                width: 250px;
+                height: 250px;
+                border: 1px solid #000;
+            }
+            .blue-box{
+                background-color: blue;
+                width: 250px;
+                height: 250px;
+                border: 1px solid #000;
+            }
+            .yellow-box{
+                background-color: yellow;
+                width: 250px;
+                height: 250px;
+                border: 1px solid #000;
+            }
+            .white-box{
+                background-color:#fff;
+                width: 150px;
+                height: 150px;
+                border: 1px solid #000;
+                margin: 20% auto;
+            }
+            .white-box .circle{
+                border-radius:50%;
+                width: 40px;
+                height: 40px;
+                float: left;
+                margin: 16px;
+                border: 1px solid #000;
+            }
+            .cell{
+                width:40px;
+                height:40px;
+                border:1px solid #000;
+            }
+            .destination{
+                border-top: 63px solid black;
+                border-left: 63px solid blueviolet;
+                border-right: 63px solid rgb(216, 190, 241);
+                border-bottom: 63px solid brown;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <h1 style="text-align: center;">Ludo</h1>
+       <div class="board">
+        <div class="row">
+         <div class="red-box">
+            <div class="white-box">
+                <div class="red circle"></div>
+                <div class="red circle"></div>
+                <div class="red circle"></div>
+                <div class="red circle"></div>
+            </div>
+         </div>
+         <div class="cell-container">
+          <div class="row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          </div>
+          <div class="row">
+          <div class="cell"></div>
+          <div class="cell green"></div>
+          <div class="cell green"></div>
+          </div>
+          <div class="row">
+          <div class="cell red"><i class="fa-solid fa-star-of-david fa-spin" style="color: #050505;"></i></div>
+          <div class="cell green"></div>
+          <div class="cell"></div>
+          </div>
+          <div class="row">
+          <div class="cell"></div>
+          <div class="cell green"></div>
+          <div class="cell"></div>
+          </div>
+          <div class="row">
+          <div class="cell"></div>
+          <div class="cell green"></div>
+          <div class="cell"></div>
+          </div>
+          <div class="row">
+          <div class="cell"></div>
+          <div class="cell green"></div>
+          <div class="cell"></div>
+          </div>
+         </div>
+         
+         
+         <div class="cell-container">
+         </div>
+         <div class="green-box">
+            <div class="white-box">
+                <div class="green circle"></div>
+                <div class="green circle"></div>
+                <div class="green circle"></div>
+                <div class="green circle"></div>
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="cell-container">
+        <div class="row">
+         <div class="cell"></div>
+         <div class="cell red"><i class="fa-solid fa-star-of-david fa-spin" style="color: #050505;"></i></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+        </div>
+         <div class="row">
+         <div class="cell"></div>
+         <div class="cell red"></div>
+         <div class="cell red"></div>
+         <div class="cell red"></div>
+         <div class="cell red"></div>
+         <div class="cell red"></div>
+        </div>
+         <div class="row">
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell blue"><i class="fa-solid fa-star-of-david fa-spin" style="color: #050505;"></i></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+        </div>
+        </div>
+        <div class="destination"></div>
+        <div class="cell-container">
+         <div class="row">
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell green"><i class="fa-solid fa-star-of-david fa-spin" style="color: #050505;"></i></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+        </div>
+         <div class="row">
+         <div class="cell yellow"></div>
+         <div class="cell yellow" ></div>
+         <div class="cell yellow"></div>
+         <div class="cell yellow"></div>
+         <div class="cell yellow"></div>
+         <div class="cell "></div>
+        </div>
+         <div class="row">
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell yellow"><i class="fa-solid fa-star-of-david fa-spin" style="color: #050505;"></i></div>
+         <div class="cell"></div>
+        </div>
+        </div>
+        </div>
+        <div class="row">
+         <div class="blue-box">
+            <div class="white-box">
+                <div class="blue circle"></div>
+                <div class="blue circle"></div>
+                <div class="blue circle"></div>
+                <div class="blue circle"></div>
+            </div>
+         </div>
+         <div class="cell-container">
+          <div class="row">
+          <div class="cell"></div>
+          <div class="cell blue"></div>
+          <div class="cell"></div>
+          </div>
+          <div class="row">
+          <div class="cell"></div>
+          <div class="cell blue"></div>
+          <div class="cell"></div>
+          </div>
+          <div class="row">
+          <div class="cell"></div>
+          <div class="cell blue"></div>
+          <div class="cell"></div>
+          </div>
+          <div class="row">
+          <div class="cell"></div>
+          <div class="cell blue"></div>
+          <div class="cell yellow"><i class="fa-solid fa-star-of-david fa-spin" style="color: #050505;"></i></div>
+          </div>
+          <div class="row">
+          <div class="cell blue"></div>
+          <div class="cell blue"></div>
+          <div class="cell"></div>
+          </div>
+          <div class="row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          </div>
+         </div>
+         <div class="cell-container">
+         </div>
+         <div class="yellow-box">
+            <div class="white-box">
+                <div class="yellow circle"></div>
+                <div class="yellow circle"></div>
+                <div class="yellow circle"></div>
+                <div class="yellow circle"></div>
+            </div>
+        </div>
+        </div>
+       </div>
+    </body>
+</html>
