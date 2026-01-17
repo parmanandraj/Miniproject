@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+        <h1 id="r1">Microsoft</h1>
+        <!-- <input type="button" value="Click me" onclick="document.getElementById('r1').innerHTML='I ma a indian'"> -->
+        <input type="button" value="Click me" onclick="disp(1)">  
+        <input type="button" value="Show me" onclick="disp(2)">
+        <script>
+            function disp(a)
+            {
+              if(a==1)
+                document.getElementById("r1").innerHTML="Hello world";
+              else
+                document.getElementById("r1").innerHTML="I am indian";
+            }
+        </script>
+    </body>
+</html>
