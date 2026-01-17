@@ -1,0 +1,164 @@
+<html>
+  <head>
+    <style>
+      body{
+        font-family:'segoe UI', sans-serif;
+        background: #f0f3f7;
+        margin: 0;
+        padding: 20px;
+      }
+      .form-container{
+        background: white;
+        max-width: 900px;
+        margin: auto;
+        padding: 30px 40px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+      }
+      header{
+        text-align:center;
+        background-color: #65a8ea;;
+        padding: 15px 0;
+        border-radius: 8px 8px 0 0;
+      }
+      header span{
+        color: #007BFF;
+      }
+      .main-form{
+        padding: 20px 0;
+      }
+      h2{
+        text-align: center;
+        color: #333;
+        border-bottom: 2px solid #007BFF;
+        padding-bottom: 5px;
+      }
+      h3{
+        margin-top: 20px;
+        color: #00a5a5;
+        border-bottom: 2px solid #00a5a5;
+        padding-bottom: 5px;
+      }
+      .form-row{
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+        gap: 10px;
+      }
+      .form-row label{
+        min-width: 130px;;
+      }
+      .form-row input{
+        padding: 6px;
+        flex:1;
+      }
+      .form-grid{
+        display: grid;
+        grid-template-columns: 150px 1fr 150px 1fr;
+        gap: 10px 15px;
+        margin-top: 20px;
+      }
+      .form-grid label{
+        text-align: right;
+        padding-top: 6px;
+      }
+      .radio-group, .checkbox-group{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .signature{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+      }
+      .signature div{
+        text-align: center;
+        width: 45%;
+      }
+      .signature hr{
+        border: 1px solid #000;
+        margin: 10px 0;
+      }
+      .info{
+        font-size: 12px;
+        color: gray;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <header>
+        <h1>GLOBAL GROUP <span>COMPANY</span></h1>
+        <p>315 Rosedale Cir, Boonevilla , AR , 72927</p>
+      </header>
+      <section class="main-form">
+        <h2>REGISTRATION FORM</h2>
+
+        <div class="form-row">
+          <label>ID No. :</label>
+          <input type="text" maxlength="10">
+          <label>Date :</label>
+          <input type="date">
+        </div>
+
+        <div class="form-row">
+          <label>Managing Director :</label>
+          <input type="text" style="width:100%">
+        </div>
+
+        <h3>Personal Information</h3>
+
+        <div class="form-grid">
+          <label>Name :</label><input type="text">
+          <label>Place of Birth :</label><input type="text">
+          <label>Date of Birth :</label><input type="date">
+          <label>Gender :</label>
+
+          <div class="radio-group">
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+          </div>
+         
+          <label>Address :</label><input type="text" style="grid-column: span 3;">
+          <label>State : </label><input type="text">
+          <label>City : </label><input type="text">
+          <label>country : </label><input type="text">
+          <label>Zip code : </label><input type="text">
+          <label>Marital status :</label><input type="text">
+          <label>Status :</label>
+
+          <div class="checkbox-group">
+            <input type="checkbox-group">Residence
+            <input type="checkbox-group">No Residence
+          </div>
+          <!-- <div>
+            <label>Religion :</label>
+            <input type =text style="width :100%">
+          </div> -->
+          <label>Nationality : </label><input type="text">
+          <label>Region : </label><input type="text">
+          <label>National ID No. : </label><input type="text">
+          <label>ID No. :</label><input type="text">
+          <label>Email :</label><input type="email">
+          <label>Phone :</label><input type="url">
+        </div>
+
+        <div class="signature">
+          <div>
+            <p>Signature</p>
+            <hr>
+            <small>Signature of application</small>
+          </div>
+          <div>
+            <p>Signature</p>
+            <small>Signature of author</small>
+          </div>
+        </div>
+        <p class="info">* Censused molestiae doloremque repellat libero. Ipsum audam resequid.</p>
+      </section>
+    </div>
+  </body>
+</html>
