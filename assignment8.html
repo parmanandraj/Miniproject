@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Entry</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        h2 {
+            text-align: center;
+            background-color: cyan;
+            padding: 10px;
+        }
+        form {
+            width: 90%;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type=text], input[type=date], input[type=email], input[type=number], select, textarea {
+            width: 100%;
+            padding: 6px;
+        }
+        input[type=submit], input[type=reset] {
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            margin: 10px;
+            font-size: 16px;
+        }
+        input[type=submit] {
+            background-color: green;
+        }
+        input[type=reset] {
+            background-color: red;
+        }
+       
+    </style>
+</head>
+<body>
+
+<h2>Registration Entry</h2>
+
+<form>
+    <table>
+        
+        <tr>
+            <fieldset>
+                <legend>Reg Form No.</legend>
+            <td>
+                <!-- <label>Reg Form No.</label><br> -->
+                 <span>Reg Form No.</span>
+                <input type="text" placeholder="Reg Form No.">
+            </td>
+            </fieldset>
+            <td>
+                <!-- <label>Reg Date</label><br> -->
+                 <span>Reg Date</span>
+                <input type="date" placeholder="regdate">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- <label>Student name*</label><br> -->
+                <input type="text" placeholder="studentname">
+            </td>
+                <!-- <legend>Student Type</legend>
+                <input type="radio" name="studenttype" value="regular" checked> Regular
+                <input type="radio" name="studenttype" value="parttime"> Part-time -->
+            <td>
+                <!-- <legend>Student Type</legend> -->
+                <!-- <label>Father name*</label><br> -->
+                <input type="text" placeholder="fathername">
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                <!-- <label>Mother Name*</label><br> -->
+                <input type="text" placeholder="mothername">
+            </td>
+            <fieldset>
+                <legend>Date of Birth</legend>
+                <input type="date" placeholder="dob">
+            </fieldset>
+            <td>
+                <!-- <label>Date of birth</label><br> -->
+                <input type="date" name="dob">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- <label>EMAIL ID (OPTIONAL)</label><br> -->
+                <input type="email" placeholder="EMAIL ID (OPTIONAL)">
+            </td>
+            
+            <td>
+                <!-- <label>Contact No*</label><br> -->
+                <input type="text" name="contact" placeholder="Contact No.">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Select Any Blood Group</label><br>
+                <select>
+                    <option>------Select Any Blood Group------</option>
+                    <option>A+</option>
+                    <option>B+</option>
+                    <option>O+</option>
+                    <option>AB+</option>
+                    <option>A-</option>
+                    <option>B-</option>
+                    <option>O-</option>
+                    <option>AB-</option>
+                </select>
+            </td>
+            <td>
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="binary"> Binary
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- <label>College Name*</label><br> -->
+                <input type="text" placeholder="college">
+            </td>
+            <td>
+                <label>Course Name</label><br>
+                <input type="checkbox" name="course" value="C"> C
+                <input type="checkbox" name="course" value="C++"> C++
+                <input type="checkbox" name="course" value="ADCA"> ADCA
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- <label>Select Any State</label><br> -->
+                <select>
+                    <option>------Select Any State------</option>
+                    <option>Bihar</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option>Delhi</option>
+                    
+                </select>
+            </td>
+            <td>
+                <!-- <label>Select Any District</label><br> -->
+                <select>
+                    <option>------Select Any District------</option>
+                    <option>Patna</option>
+                    <option>Varanasi</option>
+                    <option>Mumbai</option>
+                    <option>New Delhi</option>
+                    
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- <label>Permanent Address*</label><br>
+                <textarea rows="2" required></textarea> -->
+                 <input type="text" name="contact" placeholder="Contact No.">
+            </td>
+            <td>
+                <!-- <label>Corresponding Address*</label><br>
+                <textarea rows="2" required></textarea> -->
+                 <input type="text" name="contact" placeholder="Contact No.">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Student Pic</label><br>
+                <input type="file" name="studentpic">
+            </td>
+            <td>
+                <label>Aadhar Pic</label><br>
+                <input type="file" name="aadharpic">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
