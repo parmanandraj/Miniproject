@@ -1,0 +1,52 @@
+<html>
+    <head>
+      <style>
+        body{
+            font-family:'Arial,sans-serif';
+            padding: 40px;
+        }
+        input,select,textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #0e0d0d;
+        }
+        button{
+            padding: 10px 20px;
+            border: none;
+            cursor:pointer;
+        }
+        .form-container{
+            padding: 20px;
+            max-width:400px;
+            margin:auto;
+            border-radius: 4px;
+        }
+      </style>
+    </head>
+        <body class="form-container">
+            <div class-container>
+             <h2>Send us a sweet little note</h2>
+             <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <br>
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email">
+                <br> 
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                    <option value="general">Get a qoute!</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="support">Support</option>
+                </select>
+                <br>
+                <label for="mesage">What's up?</label>
+                <br>
+                <textarea></textarea> 
+                <br><br>
+                <button>Send message</button>
+             </form>
+            </div>
+        </body>
+</html>
